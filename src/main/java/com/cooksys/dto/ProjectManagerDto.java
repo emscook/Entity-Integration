@@ -8,13 +8,10 @@ import com.cooksys.entity.Project;
 public class ProjectManagerDto {
 	
 	private Long id;
-	
 	private String firstName;
-	
 	private String lastName;
 	
 	private Set<Reference<Project, Long>> projects;
-
 	public Long getId() {
 		return id;
 	}
@@ -71,5 +68,4 @@ public class ProjectManagerDto {
 			return false;
 		return true;
 	}
-	
 }

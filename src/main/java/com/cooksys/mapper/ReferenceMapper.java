@@ -20,7 +20,6 @@ public class ReferenceMapper {
 		super();
 		this.entityManager = entityManager;
 	}
-
 	public <Entity extends BaseEntity<Id>, Id extends Serializable> Entity toEntity(Reference<Entity, Id> reference, @TargetType Class<Entity> entityClass) {
         if(reference != null) {
         	Entity result = entityManager.find( entityClass, reference.getId() );
@@ -30,7 +29,7 @@ public class ReferenceMapper {
         }
 		return null;
     }
-
+	
     public <Entity extends BaseEntity<Id>, Id extends Serializable> Reference<Entity, Id> toReference(Entity entity) {
         return entity != null ? new Reference<>( entity.getId() ) : null;
     }

@@ -18,11 +18,11 @@ This project uses an embedded database, meaning that you will not be able to ins
 Use PostMan to test the endpoints
 
 ## Tasks
-- [ ] Create `Project` Repository
-- [ ] Create `Project` Service
-- [ ] Create `Project` Controller
-- [ ] Add a `StartDate` field to the `Project` entity
-- [ ] Add a `DueDate` field to the `Project` entity
-- [ ] Add an endpoint to allow for the retrieval of all overdue projects
-- [ ] Add an endpoint `/projectManager/{id}/project` that will retrieve a collection of all projects associated with that `ProjectManager`
-- [ ] Add an endpoint to allow searching for all `ProjectManager` entities with overdue projects. In the results, display the number of overdue projects associated with each `ProjectManager`. Sort the results from largest to smallest number of overdue projects.
+- [X] Create `Project` Repository
+- [X] Create `Project` Service
+- [X] Create `Project` Controller
+- [X] Add a `StartDate` field to the `Project` entity
+- [X] Add a `DueDate` field to the `Project` entity
+- [X] Add an endpoint to allow for the retrieval of all overdue projects
+- [X] Add an endpoint `/projectManager/{id}/project` that will retrieve a collection of all projects associated with that `ProjectManager`
+- [X] Add an endpoint to allow searching for all `ProjectManager` entities with overdue projects. In the results, display the number of overdue projects associated with each `ProjectManager`. Sort the results from largest to smallest number of overdue projects.

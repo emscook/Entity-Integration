@@ -2,6 +2,7 @@ package com.cooksys.entity;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -19,8 +20,7 @@ public class ProjectManager implements BaseEntity<Long>{
 	private String firstName;
 	
 	private String lastName;
-	
-	@OneToMany(mappedBy = "manager")
+	@OneToMany
 	private Set<Project> projects;
 
 	public Long getId() {
@@ -46,7 +46,7 @@ public class ProjectManager implements BaseEntity<Long>{
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="manager")
 	public Set<Project> getProjects() {
 		return projects;
 	}
